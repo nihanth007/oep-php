@@ -1,0 +1,95 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Online Exam Portal</title>
+
+<link rel="shortcut icon" href="favicon.ico" >
+<link rel="stylesheet" type="text/css" href="assets/css/animate.min.css">
+<link rel="stylesheet" type="text/css" href="assets/css/nihanth.css">
+<link rel="stylesheet" type="text/css" href="assets/bootstrap/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="assets/css/jquery-ui.min.css">
+<link rel="stylesheet" type="text/css" href="assets/fontawesome/css/font-awesome.min.css">
+<script src="assets/js/jquery-3.1.1.min.js"></script>
+<script src="assets/js/jquery-ui.min.js"></script>
+<script src="assets/js/tether.min.js"></script>
+<script src="assets/bootstrap/js/bootstrap.min.js"></script>
+<script src="assets/js/nihanth.js"></script>
+</head>
+
+<body background="assets/images/background.jpg">
+  <nav role="navigation" class="navbar navbar-fixed-top navbar-light bg-faded" style="background-color:#D1CEE9">
+  <a class="navbar-brand" href="#">
+    <img src="/assets/images/logo.png" width="30" height="30" class="d-inline-block align-top" alt="">
+    Online Exam Portal
+  </a>
+   <ul class="nav navbar-nav float-md-right">
+    <li class="nav-item">
+      <a class="nav-link" href="#" onclick="instructions('home')">Instructions</a>
+    </li>
+  </ul>
+</nav>
+  <div class="container animated fadeInDownBig" style="padding-top:12%;">
+    <div class="row">
+      <div class="col-md-3"></div>
+      <div class="col-md-6" id="login">
+          <h3><a href="#">Student Login</a></h3>
+          <div>
+          <form method="post" action="student.php">
+              <div class="input-group">
+                  <span class="input-group-addon" id="basic-addon1"><i class="fa fa-user-o" aria-hidden="true"></i></span>
+                  <input name="username" type="text" class="form-control" required placeholder="Enter Your Username" aria-describedby="basic-addon1">
+              </div><br>
+              <div class="input-group">
+                  <span class="input-group-addon" id="basic-addon2"><i class="fa fa-key" aria-hidden="true"></i></span>
+                  <input name="password" type="password" class="form-control" required placeholder="Enter Your Password" aria-describedby="basic-addon1">
+              </div><br>
+            <input class="btn btn-success btn-sm" type="submit" value="Login">
+          </form>
+          </div>
+          <h3><a href="#">Faculty Login</a></h3>
+          <div>
+          <form method="post" action="faculty.php">
+          <div class="input-group">
+                  <span class="input-group-addon" id="basic-addon3"><i class="fa fa-user-o" aria-hidden="true"></i></span>
+                  <input type="text" class="form-control" required placeholder="Enter Your Username" aria-describedby="basic-addon1">
+              </div><br>
+
+              <div class="input-group">
+                  <span class="input-group-addon" id="basic-addon4"><i class="fa fa-key" aria-hidden="true"></i></span>
+                  <input type="password" class="form-control" required placeholder="Enter Your Password" aria-describedby="basic-addon1">
+              </div><br>
+
+            <input class="btn btn-success btn-sm" type="submit" value="Login">
+          </form>
+          </div>
+          <h3><a href="#">Examiner Login</a></h3>
+          <div>
+          <form method="post" action="examiner.php">
+          <div class="input-group">
+                  <span class="input-group-addon" id="basic-addon5"><i class="fa fa-user-o" aria-hidden="true"></i></span>
+                  <input type="text" class="form-control" required placeholder="Enter Your Username" aria-describedby="basic-addon1">
+              </div><br>
+
+              <div class="input-group">
+                  <span class="input-group-addon" id="basic-addon6"><i class="fa fa-key" aria-hidden="true"></i></span>
+                  <input type="password" class="form-control" required placeholder="Enter Your Password" aria-describedby="basic-addon1">
+              </div><br>
+
+            <input class="btn btn-success btn-sm" type="submit" value="Login">
+          </form>
+          </div>
+      </div>
+      <div class="col-md-3"></div>
+      <script type="text/javascript">
+      $(function() {
+      $( "#login" ).accordion(); 
+      });
+      </script>
+    </div>
+  </div>
+</body>
+</html>
