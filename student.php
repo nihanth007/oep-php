@@ -17,6 +17,7 @@
 <script src="assets/js/tether.min.js"></script>
 <script src="assets/bootstrap/js/bootstrap.min.js"></script>
 <script async src="assets/js/nihanth.js"></script>
+<script src="assets/js/nihanth-exam.js"></script>
 
 </head>
 
