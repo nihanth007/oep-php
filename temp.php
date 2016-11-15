@@ -115,8 +115,26 @@ if ( $res = $db->query( $sql ) ) {
 
 			<div class="row">
 				<div class="col-lg-12">
-					<button id="startbutton" style=" align-self:stretch;" class="btn btn-success btn-block" onClick="gettime();startexam();">Start Test</button>
-
+				<div  id="startbutton">
+					<button style=" align-self:stretch;" class="btn btn-success btn-block" onClick="gettime();startexam();">Start Test</button>
+					<?php 
+						$i = 0; 
+						while($i<10){
+							$r[$i] = mt_rand ($i*10,($i*10)+10); 
+							$i++;
+						}
+					if($r[0]==0){
+						$r[0]=1;
+					}
+					echo 'The Questions Selected for You are <br>';
+					$i=0;
+					while($i<10){
+						echo $r[$i];
+						echo '<br>';
+						$i++;
+					}
+					?>
+					</div>
 					<form action="submit.php" method="get" class="container" id="exam" style="display: none;">
 						<div id="q1" class="fb-radio form-group field-q1">
 							<label for="q1" class="fb-radio-group-label">Question Number 1 </label>
@@ -498,8 +516,8 @@ if ( $res = $db->query( $sql ) ) {
 							</div>
 						</div>
 						<div class="container-fluid">
-							<a class="btn btn-outline-danger">Previous</a>
-							<a class="btn btn-outline-danger">Next</a>
+							<a id="prev" onClick="" class="btn btn-outline-primary">Previous</a>
+							<a id="next" onClick="" class="btn btn-outline-primary">Next</a>
 						</div>
 					</form>
 

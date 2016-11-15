@@ -50,6 +50,8 @@ function q1(){
 	$("#q18").hide();
 	$("#q19").hide();
 	$("#q20").hide();
+	document.getElementById("prev").onclick= q20;
+	document.getElementById("next").onclick= q2;
 }
 function q2(){
 	$("#q1").hide();
@@ -72,6 +74,8 @@ function q2(){
 	$("#q18").hide();
 	$("#q19").hide();
 	$("#q20").hide();
+	document.getElementById("prev").onclick= q1;
+	document.getElementById("next").onclick= q3;
 }
 function q3(){
 	$("#q1").hide();
@@ -94,6 +98,8 @@ function q3(){
 	$("#q18").hide();
 	$("#q19").hide();
 	$("#q20").hide();
+	document.getElementById("prev").onclick= q2;
+	document.getElementById("next").onclick= q4;
 }
 function q4(){
 	$("#q1").hide();
@@ -116,6 +122,8 @@ function q4(){
 	$("#q18").hide();
 	$("#q19").hide();
 	$("#q20").hide();
+	document.getElementById("prev").onclick= q3;
+	document.getElementById("next").onclick= q5;
 }
 function q5(){
 	$("#q1").hide();
@@ -138,6 +146,8 @@ function q5(){
 	$("#q18").hide();
 	$("#q19").hide();
 	$("#q20").hide();
+	document.getElementById("prev").onclick= q4;
+	document.getElementById("next").onclick= q6;
 }
 function q6(){
 	$("#q1").hide();
@@ -160,6 +170,8 @@ function q6(){
 	$("#q18").hide();
 	$("#q19").hide();
 	$("#q20").hide();
+	document.getElementById("prev").onclick= q5;
+	document.getElementById("next").onclick= q7;
 }
 function q7(){
 	$("#q1").hide();
@@ -182,6 +194,8 @@ function q7(){
 	$("#q18").hide();
 	$("#q19").hide();
 	$("#q20").hide();
+	document.getElementById("prev").onclick= q6;
+	document.getElementById("next").onclick= q8;
 }
 function q8(){
 	$("#q1").hide();
@@ -204,6 +218,8 @@ function q8(){
 	$("#q18").hide();
 	$("#q19").hide();
 	$("#q20").hide();
+	document.getElementById("prev").onclick= q7;
+	document.getElementById("next").onclick= q9;
 }
 function q9(){
 	$("#q1").hide();
@@ -226,6 +242,8 @@ function q9(){
 	$("#q18").hide();
 	$("#q19").hide();
 	$("#q20").hide();
+	document.getElementById("prev").onclick= q8;
+	document.getElementById("next").onclick= q10;
 }
 function q10(){
 	$("#q1").hide();
@@ -248,6 +266,8 @@ function q10(){
 	$("#q18").hide();
 	$("#q19").hide();
 	$("#q20").hide();
+	document.getElementById("prev").onclick= q9;
+	document.getElementById("next").onclick= q11;
 }
 function q11(){
 	$("#q1").hide();
@@ -270,6 +290,8 @@ function q11(){
 	$("#q18").hide();
 	$("#q19").hide();
 	$("#q20").hide();
+	document.getElementById("prev").onclick= q10;
+	document.getElementById("next").onclick= q12;
 }function q12(){
 	$("#q1").hide();
 	$("#q2").hide();
@@ -291,6 +313,8 @@ function q11(){
 	$("#q18").hide();
 	$("#q19").hide();
 	$("#q20").hide();
+	document.getElementById("prev").onclick= q11;
+	document.getElementById("next").onclick= q13;
 }
 function q13(){
 	$("#q1").hide();
@@ -313,6 +337,8 @@ function q13(){
 	$("#q18").hide();
 	$("#q19").hide();
 	$("#q20").hide();
+	document.getElementById("prev").onclick= q12;
+	document.getElementById("next").onclick= q14;
 }
 function q14(){
 	$("#q1").hide();
@@ -335,6 +361,8 @@ function q14(){
 	$("#q18").hide();
 	$("#q19").hide();
 	$("#q20").hide();
+	document.getElementById("prev").onclick= q13;
+	document.getElementById("next").onclick= q15;
 }
 function q15(){
 	$("#q1").hide();
@@ -357,6 +385,8 @@ function q15(){
 	$("#q18").hide();
 	$("#q19").hide();
 	$("#q20").hide();
+	document.getElementById("prev").onclick= q14;
+	document.getElementById("next").onclick= q16;
 }
 function q16(){
 	$("#q1").hide();
@@ -379,6 +409,8 @@ function q16(){
 	$("#q18").hide();
 	$("#q19").hide();
 	$("#q20").hide();
+	document.getElementById("prev").onclick= q15;
+	document.getElementById("next").onclick= q17;
 }
 function q17(){
 	$("#q1").hide();
@@ -401,6 +433,8 @@ function q17(){
 	$("#q18").hide();
 	$("#q19").hide();
 	$("#q20").hide();
+	document.getElementById("prev").onclick= q16;
+	document.getElementById("next").onclick= q18;
 }
 function q18(){
 	$("#q1").hide();
@@ -423,6 +457,8 @@ function q18(){
 	$("#q18").show();
 	$("#q19").hide();
 	$("#q20").hide();
+	document.getElementById("prev").onclick= q17;
+	document.getElementById("next").onclick= q19;
 }
 function q19(){
 	$("#q1").hide();
@@ -445,6 +481,8 @@ function q19(){
 	$("#q18").hide();
 	$("#q19").show();
 	$("#q20").hide();
+	document.getElementById("prev").onclick= q18;
+	document.getElementById("next").onclick= q20;
 }
 function q20(){
 	$("#q1").hide();
@@ -467,4 +505,6 @@ function q20(){
 	$("#q18").hide();
 	$("#q19").hide();
 	$("#q20").show();
+	document.getElementById("prev").onclick= q19;
+	document.getElementById("next").onclick= q1;
 }
